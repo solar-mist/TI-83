@@ -2,6 +2,7 @@
 #include "ti83.inc" ; Include the .inc file
 .list
 .org 9237h ; This is required otherwise you will get strange output
+    ; Indentation is required here
     call _ClrLCDFull ; Clear the LCD display
     ld a, 0 ; Load 0 into the accumulator 
     ld (CurRow), a ; Load the contents of register a to the address of CurRow
